@@ -25,7 +25,7 @@ test.describe('Reqres API Automation', () => {
 
   // Actualizar usuario (solo verificamos status y updatedAt)
   test('Actualizar usuario', async () => {
-    const payload = { first_name: 'Fabian', last_name: 'Moreno' }; // Solo campos reales
+    const payload = { first_name: 'Fabian', last_name: 'Moreno' }; 
 
     const response = await usersApi.updateUser(2, payload);
     expect(response.status()).toBe(200,403);
